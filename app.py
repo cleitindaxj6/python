@@ -1,7 +1,12 @@
 import os
 
 def exibir_nome_do_programa():
-    print('''         
+    print('''     
+    
+████████████████████████████████████████████████████████████████████████
+██▀▄─██▄─██─▄█─▄─▄─█─▄▄─███▄─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▀█▀─▄█▄─▄█▄─██─▄█▄─▀█▀─▄█
+██─▀─███─██─████─███─██─████─▄▄▄██─▄─▄██─▄█▀██─█▄█─███─███─██─███─█▄█─██
+▀▄▄▀▄▄▀▀▄▄▄▄▀▀▀▄▄▄▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▀▄▄▄▄▀▀▄▄▄▀▄▄▄▀  
 ''')
 
 print('Auto Premium\n')
@@ -13,9 +18,19 @@ print('4. Sair\n')
 
 
 opção_escolhida = int(input('Escolha uma opção: '))
-# opção_escolhida = int(opção_escolhida)
+# opção_escolhida = int(opção_escolhida)   
 
-def finalizar_app():
+def cadastrar_clientes():
+    print('Você escolheu cadrastrar clientes')
+
+def listar_clientes():
+    print('Você escolheu listar todos os clientes')
+
+def ativar_servico():
+    print('Você escolher mostrar sua publicação')   
+
+
+def finalizar_programa():
     os.system('cls')
     print('finalizar o app\n')
 
@@ -27,7 +42,7 @@ elif opção_escolhida == 2:
 elif opção_escolhida == 3:
     print('Ativar Serviço')
 else:
-    finalizar_app()
+    print('finalizar programa')
 
 def main():
     exibir_nome_do_programa()    
